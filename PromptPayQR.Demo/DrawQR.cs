@@ -4,9 +4,9 @@ using System.Runtime.InteropServices;
 
 namespace PromptPayQR
 {
-    public class DrawQR
+    public static class DrawQR
     {
-        public DrawQR(Bitmap qrBitmap)
+        public static void Draw(Bitmap qrBitmap)
         {
             var handler = GetConsoleHandle();
 

@@ -16,9 +16,7 @@ namespace PromptPayQR.Demo
 
                 var qrCode = PromptPayQR.QRCodePayload(promptpayID, amount);
                 Console.WriteLine($"PromptPay QR String : {qrCode}");
-
-                new DrawQR(PromptPayQR.QRCodeImage(qrCode));
-
+                DrawQR.Draw(PromptPayQR.QRCodeImage(qrCode));
                 Console.ReadKey();
                 Console.Clear();
             }

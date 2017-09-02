@@ -48,10 +48,10 @@ namespace PromptPayQR
                 .Append(EMVcoConstants.ID_CRC)
                 .Append("04");
 
-            var ia = builder.ToString().Select(x => Convert.ToByte(x)).ToArray();
-            var crc = new CRC16();
-            var checkSum = crc.ComputeCheckSum(ia);
-            builder.Append(checkSum.ToString("X"));
+            var payload = builder.ToString().Select(x => Convert.ToByte(x)).ToArray();
+            var crc = new CRC16().ComputeCheckSum(payload);
+           
+            builder.Append(crc.ToString("X"));
             return builder.ToString();
         }
 
