@@ -1,3 +1,3 @@
 #PromptPayQR QRCode Generator 
-C# Lib using for generate PromptPay QRCode 
+C# Lib use for generate PromptPay QRCode 
 
