@@ -29,10 +29,10 @@ var qrCodeBitmap = PromptPayQR.QRCodeImage(promptpayID, amount);
 ##### bring to you by..
 
 >Peera Jeawkok
->Peera@live.it
-Software Engineer
+>Peera@live.it,
+>Software Engineer,
 >AppMan Co.,Ltd
 
 ##### License
-GNU General Public License V3
-http://www.gnu.org/licenses/gpl-3.0.html
+>GNU General Public License V3
+>http://www.gnu.org/licenses/gpl-3.0.html
