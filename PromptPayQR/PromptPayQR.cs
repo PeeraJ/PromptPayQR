@@ -51,7 +51,7 @@ namespace PromptPayQR
             var payload = builder.ToString().Select(x => Convert.ToByte(x)).ToArray();
             var crc = new CRC16().ComputeCheckSum(payload);
            
-            builder.Append(crc.ToString("X"));
+            builder.Append(crc.ToString("X").PadLeft(4,'0'));
             return builder.ToString();
         }
 
