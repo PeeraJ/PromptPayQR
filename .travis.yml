@@ -1,2 +1,2 @@
 language: csharp
-solution: PromptPayQR/PromptPayQR.Demo/PromptPayQR.sln
+solution: ./PromptPayQR.Demo/PromptPayQR.sln
